@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Actions'
-        run: pwd
+      - name: 'Printing Folder Contents'
+        run: ls
 
-      - name: 'Testing Printing'
-        run: echo mary
