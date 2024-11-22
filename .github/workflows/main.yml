@@ -26,3 +26,12 @@ jobs:
       - name: "Login to Docker hub"
         run: docker login --username ${{ secrets.DOCJER_USERNAME }} --password ${{ secrets.DOCJER_TOKEN }}
 
+
+      - name: "Buliding Images"
+        run: docker bulid -t ${{ secrets.DOCJER_USERNAME }}/myimage .
+
+      - name: "Pushing"
+        run: docker push ${{ secrets.DOCJER_USERNAME }}/myimage
+
+        
+      
