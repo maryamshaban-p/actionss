@@ -28,10 +28,12 @@ jobs:
 
 
       - name: "Buliding Images"
-        run: docker bulid -t ${{ secrets.DOCJER_USERNAME }}/myimage .
+        run: docker build -t ${{ secrets.DOCJER_USERNAME }}/myimage .
 
       - name: "Pushing"
         run: docker push ${{ secrets.DOCJER_USERNAME }}/myimage
 
-        
+
+
+
       
