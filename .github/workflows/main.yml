@@ -21,3 +21,8 @@ jobs:
 
       - name: 'After'
         run: ls
+
+
+      - name: "Login to Docker hub"
+        run: docker login --username maryamshaban --password dckr_pat_zn2rvwWX87MvRlVJbvysERY-PbU
+
